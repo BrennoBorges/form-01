@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Formulário</h1>
+        </header>
+       <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome" minlength="8" maxlength="40" required>
+        </p>
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="" id="inome" placeholder="Digite seu email" required> 
+        </p>
+        <label for="">Sexo:</label>
+        <select name="cars">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Sem gênero">Sem gênero</option>
+        </select>
+        <p>
+            <label for="imes">Mês:</label>
+            <input type="datetime-local" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" placeholder="Digite sua senha">
+        </p>
+        <div class="buttons">
+            <input class="button" type="submit" value="Enviar">
+            <input class="button" type="reset" value="Limpar">
+        </div>
+        <button>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png" alt="">
+            <span>Continua with Google</span>
+        </button>
+       </form>
+    </main>
+</body>
+</html>
